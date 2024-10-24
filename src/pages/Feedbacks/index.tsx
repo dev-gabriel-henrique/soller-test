@@ -82,7 +82,7 @@ export function Feedbacks() {
         <ButtonPrimary />
       </HeaderFeedbacks>
 
-      <ScrollableContainer currentFeedback={currentFeedback} >
+      <ScrollableContainer currentfeedback={currentFeedback} >
         {feedbacksData.map((feedback, index) => (
           <li
             key={index}

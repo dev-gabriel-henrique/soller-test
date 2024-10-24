@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const FinalContainer = styled.section`
   position: relative;
-  z-index: -2;
 
   padding: 3rem .5rem;
   background-color: ${props => props.theme['purple-light']};
@@ -20,7 +19,10 @@ export const FinalContainer = styled.section`
     position: absolute;
     bottom: 0;
     left: 0;
-    z-index: -1;
+  }
+
+  & #macbook {
+    z-index: 2;
   }
 
   & > div {
@@ -39,17 +41,18 @@ export const FinalContainer = styled.section`
       position: absolute;
       top: 0;
       right: 0;
-      z-index: -1;
     }
 
     & #macbook {
       width: 63rem;
       align-self: center;
+      z-index: 2;
     }
 
     & h2 {
       width: 55.75rem;
       margin: auto;
+      z-index: 2;
     }
 
     & > div {
@@ -66,6 +69,7 @@ export const ButtonContainer = styled.div`
   flex-direction: column;
   gap: 1rem;
   margin-bottom: 4rem;
+  z-index: 2;
 
   @media (width >= 1280px) {
     margin-bottom: 0;

@@ -76,6 +76,7 @@ export const ButtonContainer = styled.button<{ variant: string }>`
   text-align: center;
   align-items: center;
   justify-content: center;
+  z-index: 3;
   
   border-radius: 100px;
 

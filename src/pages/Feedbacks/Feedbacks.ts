@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 interface ScrollableContainerProps {
-  currentFeedback: number;
+  currentfeedback: number;
 }
 
 export const FeedbacksContainer = styled.section`
@@ -54,8 +54,8 @@ export const ScrollableContainer = styled.ul<ScrollableContainerProps>`
   overflow-x: visible;
   width: 100%;
   padding-left: calc(10% - 11.1875rem);
-  transform: ${({ currentFeedback }) =>
-    `translateX(calc(-${currentFeedback} * (22.375rem + 1.5rem)))`};
+  transform: ${({ currentfeedback }) =>
+    `translateX(calc(-${currentfeedback} * (22.375rem + 1.5rem)))`};
   transition: transform 0.5s ease-in-out;
 
   & li {
