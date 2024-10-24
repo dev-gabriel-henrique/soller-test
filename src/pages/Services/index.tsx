@@ -80,7 +80,7 @@ export function Services() {
       <img id="purpleRectangle" src={rectangle} />
     </ServicesContainer>
   ) : (
-    <ServicesContainer>
+    <ServicesContainer id="services">
       <img id="purpleRectangle" src={rectangle} />
       <PhoneImage>
         <img src={phone} alt="That image represents a smartphone" />
